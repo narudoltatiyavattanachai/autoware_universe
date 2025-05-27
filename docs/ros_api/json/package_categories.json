@@ -1,0 +1,51 @@
+{
+  "perception": [],
+  "planning": [
+    {
+      "type": "message",
+      "name": "PlanningValidatorStatus"
+    }
+  ],
+  "control": [
+    {
+      "type": "message",
+      "name": "DrivingMonitorStamped"
+    },
+    {
+      "type": "message",
+      "name": "FloatStamped"
+    },
+    {
+      "type": "message",
+      "name": "ErrorStamped"
+    },
+    {
+      "type": "message",
+      "name": "Error"
+    },
+    {
+      "type": "message",
+      "name": "ControlValidatorStatus"
+    }
+  ],
+  "localization": [],
+  "system": [],
+  "common": [
+    {
+      "type": "message",
+      "name": "Particle"
+    },
+    {
+      "type": "message",
+      "name": "ParticleArray"
+    },
+    {
+      "type": "message",
+      "name": "IsFilterActivated"
+    },
+    {
+      "type": "message",
+      "name": "OperationModeTransitionManagerDebug"
+    }
+  ]
+}

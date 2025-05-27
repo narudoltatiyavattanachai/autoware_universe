@@ -1,0 +1,687 @@
+[
+  {
+    "name": "Particle",
+    "path": "localization/yabloc/yabloc_particle_filter/msg/Particle.msg",
+    "fields": [
+      {
+        "field_type": "float32",
+        "field_name": "weight",
+        "comment": null
+      },
+      {
+        "field_type": "geometry_msgs/Pose",
+        "field_name": "pose",
+        "comment": null
+      }
+    ],
+    "description": "A representation of particle, composed of weight and pose.",
+    "package": "yabloc_particle_filter"
+  },
+  {
+    "name": "ParticleArray",
+    "path": "localization/yabloc/yabloc_particle_filter/msg/ParticleArray.msg",
+    "fields": [
+      {
+        "field_type": "std_msgs/Header",
+        "field_name": "header",
+        "comment": null
+      },
+      {
+        "field_type": "int32",
+        "field_name": "id",
+        "comment": null
+      },
+      {
+        "field_type": "Particle[]",
+        "field_name": "particles",
+        "comment": null
+      }
+    ],
+    "description": "An array of particles with a header for global reference.",
+    "package": "yabloc_particle_filter"
+  },
+  {
+    "name": "PlanningValidatorStatus",
+    "path": "planning/autoware_planning_validator/msg/PlanningValidatorStatus.msg",
+    "fields": [
+      {
+        "field_type": "builtin_interfaces/Time",
+        "field_name": "stamp",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_valid_size",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_valid_finite_value",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_valid_interval",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_valid_relative_angle",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_valid_curvature",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_valid_lateral_acc",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_valid_lateral_jerk",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_valid_longitudinal_max_acc",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_valid_longitudinal_min_acc",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_valid_steering",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_valid_steering_rate",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_valid_velocity_deviation",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_valid_distance_deviation",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_valid_longitudinal_distance_deviation",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_valid_forward_trajectory_length",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_valid_latency",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_valid_yaw_deviation",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_valid_trajectory_shift",
+        "comment": null
+      },
+      {
+        "field_type": "int64",
+        "field_name": "trajectory_size",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "max_interval_distance",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "max_relative_angle",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "max_curvature",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "max_lateral_acc",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "max_lateral_jerk",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "max_longitudinal_acc",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "min_longitudinal_acc",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "max_steering",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "max_steering_rate",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "velocity_deviation",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "distance_deviation",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "longitudinal_distance_deviation",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "forward_trajectory_length_required",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "forward_trajectory_length_measured",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "latency",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "yaw_deviation",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "lateral_shift",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "longitudinal_shift",
+        "comment": null
+      },
+      {
+        "field_type": "int64",
+        "field_name": "invalid_count",
+        "comment": null
+      }
+    ],
+    "description": "states",
+    "package": "autoware_planning_validator"
+  },
+  {
+    "name": "IsFilterActivated",
+    "path": "control/autoware_vehicle_cmd_gate/msg/IsFilterActivated.msg",
+    "fields": [
+      {
+        "field_type": "builtin_interfaces/Time",
+        "field_name": "stamp",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_activated",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_activated_on_steering",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_activated_on_steering_rate",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_activated_on_speed",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_activated_on_acceleration",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_activated_on_jerk",
+        "comment": null
+      }
+    ],
+    "description": "for additional information",
+    "package": "autoware_vehicle_cmd_gate"
+  },
+  {
+    "name": "DrivingMonitorStamped",
+    "path": "control/autoware_control_performance_analysis/msg/DrivingMonitorStamped.msg",
+    "fields": [
+      {
+        "field_type": "autoware_control_performance_analysis/FloatStamped",
+        "field_name": "longitudinal_acceleration",
+        "comment": null
+      },
+      {
+        "field_type": "autoware_control_performance_analysis/FloatStamped",
+        "field_name": "longitudinal_jerk",
+        "comment": null
+      },
+      {
+        "field_type": "autoware_control_performance_analysis/FloatStamped",
+        "field_name": "lateral_acceleration",
+        "comment": null
+      },
+      {
+        "field_type": "autoware_control_performance_analysis/FloatStamped",
+        "field_name": "lateral_jerk",
+        "comment": null
+      },
+      {
+        "field_type": "autoware_control_performance_analysis/FloatStamped",
+        "field_name": "desired_steering_angle",
+        "comment": null
+      },
+      {
+        "field_type": "autoware_control_performance_analysis/FloatStamped",
+        "field_name": "controller_processing_time",
+        "comment": null
+      }
+    ],
+    "description": null,
+    "package": "autoware_control_performance_analysis"
+  },
+  {
+    "name": "FloatStamped",
+    "path": "control/autoware_control_performance_analysis/msg/FloatStamped.msg",
+    "fields": [
+      {
+        "field_type": "std_msgs/Header",
+        "field_name": "header",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "data",
+        "comment": null
+      }
+    ],
+    "description": null,
+    "package": "autoware_control_performance_analysis"
+  },
+  {
+    "name": "ErrorStamped",
+    "path": "control/autoware_control_performance_analysis/msg/ErrorStamped.msg",
+    "fields": [
+      {
+        "field_type": "std_msgs/Header",
+        "field_name": "header",
+        "comment": null
+      },
+      {
+        "field_type": "autoware_control_performance_analysis/Error",
+        "field_name": "error",
+        "comment": null
+      }
+    ],
+    "description": null,
+    "package": "autoware_control_performance_analysis"
+  },
+  {
+    "name": "Error",
+    "path": "control/autoware_control_performance_analysis/msg/Error.msg",
+    "fields": [
+      {
+        "field_type": "float64",
+        "field_name": "lateral_error",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "lateral_error_velocity",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "lateral_error_acceleration",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "longitudinal_error",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "longitudinal_error_velocity",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "longitudinal_error_acceleration",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "heading_error",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "heading_error_velocity",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "control_effort_energy",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "error_energy",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "value_approximation",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "curvature_estimate",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "curvature_estimate_pp",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "vehicle_velocity_error",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "tracking_curvature_discontinuity_ability",
+        "comment": null
+      }
+    ],
+    "description": null,
+    "package": "autoware_control_performance_analysis"
+  },
+  {
+    "name": "OperationModeTransitionManagerDebug",
+    "path": "control/autoware_operation_mode_transition_manager/msg/OperationModeTransitionManagerDebug.msg",
+    "fields": [
+      {
+        "field_type": "builtin_interfaces/Time",
+        "field_name": "stamp",
+        "comment": null
+      },
+      {
+        "field_type": "string",
+        "field_name": "status",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "in_autoware_control",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "in_transition",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_all_ok",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "engage_allowed_for_stopped_vehicle",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "trajectory_available_ok",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "lateral_deviation_ok",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "yaw_deviation_ok",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "speed_upper_deviation_ok",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "speed_lower_deviation_ok",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "stop_ok",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "large_acceleration_ok",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "large_lateral_acceleration_ok",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "large_lateral_acceleration_diff_ok",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "current_speed",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "target_control_speed",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "target_planning_speed",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "target_control_acceleration",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "lateral_acceleration",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "lateral_acceleration_deviation",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "lateral_deviation",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "yaw_deviation",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "speed_deviation",
+        "comment": null
+      }
+    ],
+    "description": "states",
+    "package": "autoware_operation_mode_transition_manager"
+  },
+  {
+    "name": "ControlValidatorStatus",
+    "path": "control/autoware_control_validator/msg/ControlValidatorStatus.msg",
+    "fields": [
+      {
+        "field_type": "builtin_interfaces/Time",
+        "field_name": "stamp",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_valid_max_distance_deviation",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_valid_acc",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_rolling_back",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_over_velocity",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_valid_lateral_jerk",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "has_overrun_stop_point",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "will_overrun_stop_point",
+        "comment": null
+      },
+      {
+        "field_type": "bool",
+        "field_name": "is_valid_latency",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "max_distance_deviation",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "steering_rate",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "lateral_jerk",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "desired_acc",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "measured_acc",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "target_vel",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "vehicle_vel",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "dist_to_stop",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "pred_dist_to_stop",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "nearest_trajectory_vel",
+        "comment": null
+      },
+      {
+        "field_type": "float64",
+        "field_name": "latency",
+        "comment": null
+      },
+      {
+        "field_type": "int64",
+        "field_name": "invalid_count",
+        "comment": null
+      }
+    ],
+    "description": "states",
+    "package": "autoware_control_validator"
+  }
+]
